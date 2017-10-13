@@ -1,7 +1,13 @@
 package com.dbc.deathbychocolate.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Product {
-	private int productId,productQuality;
+	@Id
+	private int productId;
+	private int productQuality;
 	private String productName,productCategory,productSupplier,productDescription;
 	private double productPrice;
 	public int getProductId() {

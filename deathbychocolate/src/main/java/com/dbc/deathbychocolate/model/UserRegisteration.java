@@ -1,7 +1,13 @@
 package com.dbc.deathbychocolate.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class UserRegisteration {
-	private String userName,userEmail,userCity,userAddress;
+	@Id
+	private String userEmail;
+	private String userName,userCity,userAddress;
 	private long userContact;
 	private int userAge,userPincode;
 	public String getUserName() {

@@ -1,7 +1,13 @@
 package com.dbc.deathbychocolate.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Supplier {
-private int supplierId,supplierPincode;
+	@Id
+private int supplierId;
+private int supplierPincode;
 private String supplierName,supplierEmail,supplierAddress,supplierCity;
 private long supplierContact;
 public int getSupplierId() {
